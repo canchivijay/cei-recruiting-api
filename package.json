@@ -14,18 +14,3 @@
     "node": ">=18.0.0"
   }
 }
-```
-4. Click **Commit new file**
-
----
-
-## Step 2 — Add variables to cei-recruiting-api
-
-1. Click **cei-recruiting-api** card in Railway
-2. Click **Variables** tab
-3. Click **Raw Editor**
-4. Paste:
-```
-GEMINI_API_KEY=AIzaSyDh6Ll6t0JlN8tfQIeW8TkqrjO94wwpHMo
-FRONTEND_URL=https://cei-recruiting-frontend-4nn8.vercel.app
-PORT=3001
