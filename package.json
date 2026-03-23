@@ -14,34 +14,3 @@
     "node": ">=18.0.0"
   }
 }
-```
-
----
-
-## Step 2 — Check Railway Variables are named correctly
-
-In Railway → **cei-recruiting-api** → **Variables** tab, it must show:
-
-| Name (left column) | Value (right column) |
-|---|---|
-| `GEMINI_API_KEY` | `AIzaSyDh6...` |
-| `FRONTEND_URL` | `https://cei-recruiting-frontend-4nn8.vercel.app` |
-| `PORT` | `3001` |
-
-From the screenshot I saw the values were there but the **variable names** may be missing — Railway needs the name on the left, value on the right.
-
----
-
-## Step 3 — Get Railway URL
-
-Once build succeeds (green ✓), click **cei-recruiting-api** → **Settings** → **Networking** → **Generate Domain** → copy URL
-
-Then open that URL + `/health` in browser — should show `{"status":"ok"}`
-
----
-
-## Step 4 — Add to Vercel
-
-Vercel → Settings → Environment Variables → add/update:
-```
-VITE_API_URL = https://your-railway-url.railway.app
